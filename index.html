@@ -1,79 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Irvan Zidny - Portfolio Data Scientist</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Irvan Zidny – Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body>
-    <header>
-        <div class="container header-content">
-            <div class="profile-summary">
-                <img src="path/to/your/image.jpg" alt="Foto Irvan Zidny" class="profile-picture" />
-                <h1>Hai, saya Irvan Zidny</h1>
-                <p class="tagline">Data Scientist | Machine Learning Enthusiast | Analytics Storyteller</p>
-                <p class="summary">
-                    Saya seorang Data Scientist dengan semangat tinggi dalam mengubah data menjadi wawasan yang dapat ditindaklanjuti. 
-                    Berpengalaman dalam membangun model Machine Learning, melakukan analisis prediktif, dan visualisasi data 
-                    untuk mendukung pengambilan keputusan bisnis. Saya percaya pada kekuatan data untuk mendorong inovasi dan 
-                    menyelesaikan masalah kompleks.
-                </p>
-            </div>
+<body class="bg-gradient-to-tr from-indigo-100 to-purple-100 text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-purple-700 tracking-tight">Irvan Zidny</h1>
+      <nav class="space-x-6 text-sm font-semibold text-gray-600">
+        <a href="#about" class="hover:text-purple-700">About</a>
+        <a href="#projects" class="hover:text-purple-700">Projects</a>
+        <a href="#contact" class="hover:text-purple-700">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="pt-36 pb-28 text-center bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-600 text-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-5xl font-bold mb-4 animate-fade-in-up">Hi, I'm Irvan 👨‍💻</h2>
+      <p class="text-lg mb-8 animate-fade-in-up delay-100">Data Scientist • ML Developer • Storyteller</p>
+      <a href="#projects" class="bg-white text-purple-700 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-purple-100 transition">Explore My Work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-purple-700 mb-6">About Me</h3>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        I specialize in turning data into insights. With experience in customer segmentation, churn prediction, and forecasting using tools like PySpark, Dask, and deep learning models, I help organizations make data-driven decisions with confidence.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-gradient-to-b from-purple-50 to-indigo-100">
+    <div class="max-w-7xl mx-auto px-6">
+      <h3 class="text-3xl font-bold text-center text-purple-800 mb-12">Selected Projects</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition">
+          <h4 class="text-xl font-semibold text-purple-700 mb-2">Customer Segmentation</h4>
+          <p class="text-sm text-gray-600">KMeans + RFM + PySpark clustering on millions of bank transactions.</p>
         </div>
-    </header>
 
-    <main class="container">
-        <section id="skills">
-            <h2>Keahlian Saya</h2>
-            <div class="skills-grid">
-                <span>Python</span>
-                <span>SQL</span>
-                <span>Machine Learning (Scikit-learn, TensorFlow)</span>
-                <span>Data Visualization (Matplotlib, Seaborn, Power BI)</span>
-                <span>Big Data (PySpark)</span>
-                <span>Statistical Analysis</span>
-                <span>A/B Testing</span>
-                <span>Cloud Platforms (GCP/AWS dasar)</span>
-            </div>
-        </section>
-
-        <hr>
-
-        <section id="projects">
-            <h2>Proyek-Proyek Saya</h2>
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3><a href="#" target="_blank">Customer Segmentation with PySpark</a></h3>
-                    <p>Menerapkan algoritma clustering pada dataset besar menggunakan PySpark untuk mengidentifikasi segmen pelanggan yang berbeda, mendukung strategi pemasaran yang lebih personal.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="#" target="_blank">Churn Prediction with Scikit-learn</a></h3>
-                    <p>Membangun model klasifikasi menggunakan Scikit-learn untuk memprediksi pelanggan yang berpotensi churn, dilengkapi dengan analisis faktor-faktor penyebab churn.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="#" target="_blank">Optimasi Penjualan dengan Analisis Prediktif</a></h3>
-                    <p>Menganalisis data penjualan historis dan membangun model prediktif untuk meramalkan tren penjualan di masa depan, membantu dalam optimasi inventaris dan strategi harga.</p>
-                </div>
-                <div class="project-item">
-                    <h3><a href="#" target="_blank">Analisis Sentimen Media Sosial untuk Brand XYZ</a></h3>
-                    <p>Mengumpulkan dan menganalisis data sentimen dari media sosial untuk memahami persepsi publik terhadap brand XYZ, menggunakan teknik NLP.</p>
-                </div>
-                </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container footer-content">
-            <p>Tertarik berdiskusi? Mari terhubung!</p>
-            <p>Email: <a href="mailto:izcd4399@gmail.com">izcd4399@gmail.com</a></p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/irvan-zidny-yourprofile/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/irvanzidny-yourprofile" target="_blank">GitHub</a>
-                </div>
-            <p>&copy; 2025 Irvan Zidny. Hak Cipta Dilindungi.</p>
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition">
+          <h4 class="text-xl font-semibold text-purple-700 mb-2">Transaction Forecasting</h4>
+          <p class="text-sm text-gray-600">Hierarchical time-series forecasting using Prophet & XGBoost.</p>
         </div>
-    </footer>
+
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition">
+          <h4 class="text-xl font-semibold text-purple-700 mb-2">Churn Prediction Model</h4>
+          <p class="text-sm text-gray-600">LSTM + Dask deep learning model for predicting customer churn probability.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition">
+          <h4 class="text-xl font-semibold text-purple-700 mb-2">Streamlit Dashboards</h4>
+          <p class="text-sm text-gray-600">Interactive analytics dashboards with Streamlit + Hive integration.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition">
+          <h4 class="text-xl font-semibold text-purple-700 mb-2">Financial Behavior Analysis</h4>
+          <p class="text-sm text-gray-600">Deep dive into spending habits using clustering & transaction frequency.</p>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-xl p-6 hover:scale-105 transform transition">
+          <h4 class="text-xl font-semibold text-purple-700 mb-2">Customer Lifetime Value</h4>
+          <p class="text-sm text-gray-600">BG/NBD modeling to estimate future transactions & retention rate.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-24 bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold text-purple-700 mb-6">Let's Connect</h3>
+      <p class="text-gray-700 mb-6 text-lg">I'm open to collaborations, freelance projects, or just chatting about data. Let's build something awesome together.</p>
+      <a href="mailto:izcd4399@gmail.com" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-full shadow-lg transition">Email Me</a>
+      <div class="mt-6 space-x-4 text-purple-700 text-2xl">
+        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://x.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-purple-700 text-white text-center py-6">
+    <p>&copy; 2025 Irvan Zidny. Made with ❤️ and Tailwind CSS.</p>
+  </footer>
+
+  <!-- Animation Classes -->
+  <style>
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .delay-100 { animation-delay: 0.3s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </body>
 </html>
