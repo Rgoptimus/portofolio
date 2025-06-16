@@ -51,5 +51,7 @@ body{
         #df8908 10%,
         #ff1d15 100%
     );
+    background-clip: text;
+    color: transparent;
 }
 
