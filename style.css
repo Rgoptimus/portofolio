@@ -37,17 +37,20 @@ body {
 /* Header */
 .header {
     position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+    inset: 0 0 auto 0;               /* top‑left penuh */
     padding: 4rem 15%;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
+    width: 100%;
+
+    background: transparent;         /* biar ikut gradient body */
+    backdrop-filter: blur(10px) saturate(120%);
+    -webkit-backdrop-filter: blur(10px) saturate(120%);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
 }
+
 
 /* Logo dan Menu */
 #menu-icon {
