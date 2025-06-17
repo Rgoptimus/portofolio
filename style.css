@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom right, var(--bg-color) 10%, var(--second-bg-color) 100%);
+    background: linear-gradient(to bottom right, var(--bg-color), var(--second-bg-color));
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
