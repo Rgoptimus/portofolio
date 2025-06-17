@@ -21,7 +21,12 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom right, var(--bg-color), var(--second-bg-color));
+    background: linear-gradient(
+        135deg,          /* sudut 135° = bottom right */
+        var(--bg-color) 0%,
+        #1e0f91 35%,     /* warna transisi tengah opsional */
+        var(--second-bg-color) 100%
+    );
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
