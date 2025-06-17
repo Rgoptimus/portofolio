@@ -1,31 +1,36 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: none;
+/* Reset dan Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: none;
-    font-family: "Poppins";
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
 }
-:root{
+
+:root {
     --bg-color: #080b71;
     --second-bg-color: #330070;
-    --text-color: white;
+    --text-color: #ffffff;
     --main-color: #ea580c;
 }
-html{
-    font-size: 60%;
+
+html {
+    font-size: 62.5%;
     overflow-x: hidden;
 }
-body{
-    background: linear-gradient(
-        270deg,
-        #080b71 10%,
-        #330070 100%
-    );
+
+body {
+    background: linear-gradient(270deg, var(--bg-color) 10%, var(--second-bg-color) 100%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--text-color);
-    background-clip: var(--bg-color);
+    min-height: 100vh;
 }
-.header{
+
+/* Header */
+.header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -38,28 +43,31 @@ body{
     align-items: center;
     z-index: 1000;
 }
-#menu-icon{
+
+/* Logo dan Menu */
+#menu-icon {
     font-size: 3.5rem;
     color: var(--main-color);
     display: none;
 }
-.logo{
+
+.logo {
     font-size: 3.5rem;
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.logo:hover{
-    transform: scale(1.1);
-}
-span{
-    background: linear-gradient(
-        270deg,
-        #DF8909 10%,
-        #ff1d15 100%
-    );
-    background-clip: text;
-    color: transparent;
+    transition: transform 0.3s ease-in-out;
 }
 
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Highlight Warna Teks Gradien */
+span {
+    background: linear-gradient(270deg, #DF8909 10%, #ff1d15 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
