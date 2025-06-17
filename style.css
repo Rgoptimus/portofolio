@@ -55,14 +55,20 @@ body {
 /* Logo dan Menu */
 #menu-icon {
     font-size: 3.5rem;
-    color: var(--text-color);
+    color: var(--main-color);
     display: none;
 }
 
 .logo {
     font-size: 3.5rem;
-    color: var(--text-color);
+    color: #ffffff; 
     font-weight: 800;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
+}
+
+
+.logo:hover {
+    transform: scale(1.1);
+    color: #ea580c; /* opsional: ubah warna saat hover */
 }
