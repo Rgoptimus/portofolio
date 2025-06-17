@@ -17,8 +17,13 @@ html{
     overflow-x: hidden;
 }
 body{
-    background: var(--bg-color);
+    background: linear-gradient(
+        270deg,
+        #080b71 10%,
+        #330070 100%
+    );
     color: var(--text-color);
+    background-clip: var(--bg-color);
 }
 .header{
     position: fixed;
