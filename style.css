@@ -22,9 +22,9 @@ html {
 
 body {
     background: linear-gradient(
-        135deg,          /* sudut 135° = bottom right */
+        135deg,
         var(--bg-color) 0%,
-        #1e0f91 35%,     /* warna transisi tengah opsional */
+        #1e0f91 35%,
         var(--second-bg-color) 100%
     );
     background-attachment: fixed;
@@ -37,20 +37,24 @@ body {
 /* Header */
 .header {
     position: fixed;
-    inset: 0 0 auto 0;               
+    inset: 0 0 auto 0;
     padding: 4rem 15%;
     width: 100%;
 
-    background: transparent;         
-    backdrop-filter: blur(10px) saturate(120%);
-    -webkit-backdrop-filter: blur(10px) saturate(120%);
+    background: linear-gradient(
+        135deg,
+        rgba(8, 11, 113, 0.85) 0%,
+        rgba(30, 15, 145, 0.85) 35%,
+        rgba(51, 0, 112, 0.85) 100%
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
 }
-
 
 /* Logo dan Menu */
 #menu-icon {
@@ -61,14 +65,33 @@ body {
 
 .logo {
     font-size: 3.5rem;
-    color: #ffffff; 
+    color: #ffffff;
     font-weight: 800;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
-
 .logo:hover {
     transform: scale(1.1);
-    color: #ea580c; /* opsional: ubah warna saat hover */
+    color: var(--main-color);
+}
+
+/* Teks Gradien (jika ada <span>) */
+span {
+    background: linear-gradient(270deg, #DF8909 10%, #ff1d15 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.navbar a {
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 3rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
 }
