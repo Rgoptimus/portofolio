@@ -2,16 +2,185 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Irvan Zidny Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e0b2b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .header {
+      width: 100%;
+      padding: 20px 60px;
+      background-color: #09061d;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      background: linear-gradient(45deg, #f12711, #f5af19);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .bar a {
+      margin-left: 25px;
+      font-size: 1rem;
+      color: #f0f0f0;
+      transition: color 0.3s;
+    }
+
+    .bar a:hover {
+      color: #f5af19;
+    }
+
+    .home-section {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      background: radial-gradient(circle at top, #1e168b, #0e0b2b);
+      text-align: center;
+    }
+
+    .home-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .gradient-text {
+      background: linear-gradient(45deg, #f12711, #f5af19);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .home-content p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .profile-photo {
+      margin-top: 20px;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #f5af19;
+      box-shadow: 0 0 10px rgba(245, 175, 25, 0.7);
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .about-section h2,
+    .experience-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #f5af19;
+    }
+
+    .timeline {
+      position: relative;
+      border-left: 4px solid #f97316;
+      padding-left: 30px;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -12px;
+      top: 5px;
+      width: 15px;
+      height: 15px;
+      background-color: #f97316;
+      border: 3px solid white;
+      border-radius: 50%;
+    }
+
+    .timeline-date {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-bottom: 5px;
+    }
+
+    .timeline-content {
+      background: #1d1a5e;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 5px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .timeline-content h3 {
+      color: #f5af19;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .timeline-content ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #09061d;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
-
   <header class="header">
-    <a href="#home" class="logo">Irvan <span>Zidny</span></a>
-    <i class="bx bx-menu" id="menu-icon"></i>
+    <a href="#home" class="logo">Irvan Zidny</a>
     <nav class="bar">
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -21,59 +190,63 @@
   </header>
 
   <section class="home-section" id="home">
-    <div class="home-content">
+    <div class="container home-content">
       <h1>Hi, I'm <span class="gradient-text">Irvan Zidny</span></h1>
       <p>Welcome to my portfolio website. Explore my projects and skills.</p>
-      <img src="7e991373-4d12-43a7-80f8-8acde067bb03.png" alt="Profile Photo" class="profile-photo"/>
+      <img src="7e991373-4d12-43a7-80f8-8acde067bb03.png" alt="Profile Photo" class="profile-photo" />
     </div>
   </section>
 
   <section class="about-section" id="about">
-    <h2>About Me</h2>
-    <p>
-      A Master of Human Resources Development graduate with two years of experience as a Data Scientist,
-      possessing a strong interest and foundational knowledge in data analytics. Eager to apply and enhance
-      analytical capabilities, leverage data-driven insights for informed decision-making, and contribute
-      meaningfully to the field of data analytics.
-    </p>
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        A Master of Human Resources Development graduate with two years of experience as a Data Scientist,
+        possessing a strong interest and foundational knowledge in data analytics. Eager to apply and enhance
+        analytical capabilities, leverage data-driven insights for informed decision-making, and contribute
+        meaningfully to the field of data analytics.
+      </p>
+    </div>
   </section>
 
   <section class="experience-section" id="experience">
-    <h2>Professional Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">09/2024 - Present</div>
-        <div class="timeline-content">
-          <h3>Data Scientist – PT. Bank DKI</h3>
-          <ul>
-            <li>Utilize TSFRESH for time-series feature engineering</li>
-            <li>Forecast using ML2 module</li>
-            <li>Customer segmentation (RFM, KMeans, DBSCAN)</li>
-            <li>Streamlit app on Cloudera ML for predictions</li>
-          </ul>
+    <div class="container">
+      <h2>Professional Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">09/2024 - Present</div>
+          <div class="timeline-content">
+            <h3>Data Scientist – PT. Bank DKI</h3>
+            <ul>
+              <li>Utilize TSFRESH for time-series feature engineering</li>
+              <li>Forecast using ML2 module</li>
+              <li>Customer segmentation (RFM, KMeans, DBSCAN)</li>
+              <li>Streamlit app on Cloudera ML for predictions</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">08/2022 - 09/2024</div>
-        <div class="timeline-content">
-          <h3>Data Scientist – PT. Metranet (Telkom Indonesia)</h3>
-          <ul>
-            <li>SQL-based data mart logic development & optimization</li>
-            <li>Dashboard monitoring & stakeholder reporting</li>
-            <li>Tableau dashboard for decarbonization metrics</li>
-          </ul>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">08/2022 - 09/2024</div>
+          <div class="timeline-content">
+            <h3>Data Scientist – PT. Metranet (Telkom Indonesia)</h3>
+            <ul>
+              <li>SQL-based data mart logic development & optimization</li>
+              <li>Dashboard monitoring & stakeholder reporting</li>
+              <li>Tableau dashboard for decarbonization metrics</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-date">02/2022 - 08/2022</div>
-        <div class="timeline-content">
-          <h3>Technical Writer – PT. Kereta Api Indonesia</h3>
-          <p>Created big data documentation, ETL & system designs.</p>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">02/2022 - 08/2022</div>
+          <div class="timeline-content">
+            <h3>Technical Writer – PT. Kereta Api Indonesia</h3>
+            <p>Created big data documentation, ETL & system designs.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -82,7 +255,5 @@
   <footer>
     <p>&copy; 2025 Irvan Zidny. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
