@@ -66,16 +66,3 @@ body {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-/* Highlight Warna Teks Gradien */
-span {
-    background: linear-gradient(270deg, #0c0801 10%, #0202f4 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
