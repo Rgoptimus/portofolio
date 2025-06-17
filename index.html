@@ -2,42 +2,87 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Irvan Zidny Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <i class="bx bx-menu" id="menu-icon"></i>
 
-    <nav class="navbar" id="navbar">
+  <header class="header">
+    <a href="#home" class="logo">Irvan <span>Zidny</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="bar">
       <a href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#project">Project</a>
       <a href="#contact">Contact</a>
-      <button class="gradient-bttn">Contact Me</button>
     </nav>
   </header>
 
-  <main class="content">
-    <section id="home">
-      <h1>Hi, I'm <span>Irvan Zidny</span></h1>
+  <section class="home-section" id="home">
+    <div class="home-content">
+      <h1>Hi, I'm <span class="gradient-text">Irvan Zidny</span></h1>
       <p>Welcome to my portfolio website. Explore my projects and skills.</p>
-    </section>
-  </main>
+      <img src="7e991373-4d12-43a7-80f8-8acde067bb03.png" alt="Profile Photo" class="profile-photo"/>
+    </div>
+  </section>
 
-  <script>
-    // Toggle Navbar on small screen
-    const menuIcon = document.getElementById("menu-icon");
-    const navbar = document.getElementById("navbar");
+  <section class="about-section" id="about">
+    <h2>About Me</h2>
+    <p>
+      A Master of Human Resources Development graduate with two years of experience as a Data Scientist,
+      possessing a strong interest and foundational knowledge in data analytics. Eager to apply and enhance
+      analytical capabilities, leverage data-driven insights for informed decision-making, and contribute
+      meaningfully to the field of data analytics.
+    </p>
+  </section>
 
-    menuIcon.onclick = () => {
-      navbar.classList.toggle("active");
-    };
-  </script>
+  <section class="experience-section" id="experience">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">09/2024 - Present</div>
+        <div class="timeline-content">
+          <h3>Data Scientist – PT. Bank DKI</h3>
+          <ul>
+            <li>Utilize TSFRESH for time-series feature engineering</li>
+            <li>Forecast using ML2 module</li>
+            <li>Customer segmentation (RFM, KMeans, DBSCAN)</li>
+            <li>Streamlit app on Cloudera ML for predictions</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">08/2022 - 09/2024</div>
+        <div class="timeline-content">
+          <h3>Data Scientist – PT. Metranet (Telkom Indonesia)</h3>
+          <ul>
+            <li>SQL-based data mart logic development & optimization</li>
+            <li>Dashboard monitoring & stakeholder reporting</li>
+            <li>Tableau dashboard for decarbonization metrics</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">02/2022 - 08/2022</div>
+        <div class="timeline-content">
+          <h3>Technical Writer – PT. Kereta Api Indonesia</h3>
+          <p>Created big data documentation, ETL & system designs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Irvan Zidny. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
