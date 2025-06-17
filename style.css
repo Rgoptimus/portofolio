@@ -41,12 +41,7 @@ body {
     top: 0;
     left: 0;
     padding: 4rem 15%;
-    background-color:linear-gradient(
-        135deg,          /* sudut 135° = bottom right */
-        var(--bg-color) 0%,
-        #1e0f91 35%,     /* warna transisi tengah opsional */
-        var(--second-bg-color) 100%
-    );
+    background-color: transparent;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
