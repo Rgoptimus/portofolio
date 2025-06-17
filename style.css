@@ -37,11 +37,11 @@ body {
 /* Header */
 .header {
     position: fixed;
-    inset: 0 0 auto 0;               /* top‑left penuh */
+    inset: 0 0 auto 0;               
     padding: 4rem 15%;
     width: 100%;
 
-    background: transparent;         /* biar ikut gradient body */
+    background: transparent;         
     backdrop-filter: blur(10px) saturate(120%);
     -webkit-backdrop-filter: blur(10px) saturate(120%);
 
@@ -73,7 +73,7 @@ body {
 
 /* Highlight Warna Teks Gradien */
 span {
-    background: linear-gradient(270deg, #DF8909 10%, #ff1d15 100%);
+    background: linear-gradient(270deg, #0c0801 10%, #0202f4 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
