@@ -106,23 +106,26 @@ section {
   position: relative;
   border-left: 4px solid #f97316;
   padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* spasi antar item timeline */
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 40px;
   animation: fadeInUp 1s ease-in-out;
 }
 
 .timeline-dot {
   position: absolute;
   left: -12px;
-  top: 5px;
-  width: 15px;
-  height: 15px;
+  top: 10px;
+  width: 16px;
+  height: 16px;
   background-color: #f97316;
   border: 3px solid white;
   border-radius: 50%;
+  z-index: 2;
 }
 
 .timeline-date {
@@ -135,7 +138,6 @@ section {
   background: #1d1a5e;
   padding: 20px;
   border-radius: 8px;
-  margin-top: 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
