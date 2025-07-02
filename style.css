@@ -96,7 +96,8 @@ section {
 }
 
 .about-section h2,
-.experience-section h2 {
+.experience-section h2,
+.projects-section h2 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: #f5af19;
